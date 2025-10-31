@@ -32,7 +32,8 @@ int main() {
 
     cout << "Input either (1) or (2):";
     cin >> userNum;
-
+    cin.ignore();  // “Extracts characters from the input sequence and discards them, until either n characters have been extracted and discarded or one compares equal to delim (which is also extracted and discarded).”
+// https://cplusplus.com/reference/istream/istream/ignore/
     if (userNum == 1) {
             string cipherText = "TIPA MELZ EIBE LFYG HREI LSMS PSPT DRSJ ZNRA HBEE UIRU ZOQM GJYA SIAO JTGM NHTT BENE ZWGE TFGE QAEL YOVL OXEO NVDF CISX OQPR ESRN TTBE NGZL KSWB YAKC SJDB TXIU SARR OQZW DVOG LNSM CJAA SMNH LNXE NBWY SMCB WRDP AUTO MWOS ERTX HTTT RTRP GIMG EJDT NEST TSSY SJYM ZOIO RAUE IMLB KIWI LTVI ASPA KVEB OYZG QVLI MXEE HISL TIPA MELZ EIBE LFYG HREX PAUI SBWG DFRB TCOE TUPR MWJV DTZW TIPJ ZGQV LRCP OPXW DEVF DFKS WFCS ZRDM PAUI S";
 
