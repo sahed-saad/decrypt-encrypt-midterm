@@ -24,11 +24,15 @@ int main() {
 
     string userName;
     int userNum;
-    cout << "Hey " << "username" << "!";
+
+    cout << "Enter your name!" << endl;
+
+    cin >> userName;
+    cout << "Hey " << userName << "!";
     cout << "This program has 2 main parts: i) Decryption and ii) Encryption." << endl;
-    cout << "For Part (i), Decryption of ciphertext that have been encrypted by Alice and sent to Bob";
+    cout << "For Part (i), Decryption of ciphertext that have been encrypted by Alice and sent to Bob" << endl;
     cout << "If you would like to continue to view the decrypted text which we've done with our sophisticated algorithm, Enter (1)" << endl;
-    cout << "Else, if you would like to encrypt a text that you input,Part 1, we will encrypt with our encryption algorithm. For this part enter (2)" << endl;
+    cout << "Else, if you would like to encrypt a text that you input, Part 1, we will encrypt with our encryption algorithm. For this part enter (2)" << endl;
 
     cout << "Input either (1) or (2):";
     cin >> userNum;
@@ -135,20 +139,16 @@ and then our first key becomes false;
             finalText += ' ';
          }
     }
-
     cout << "The correct English plain text: " << finalText << endl;
     cout << "Best key: " << correctKey << endl;
 
     return 0;
-
     }
 
     else if (userNum == 2) {
-          
 
-
-  cout << "Enter the phrase you would like to encrypt: " << endl;
-  getline(cin, phrase);
+    cout << "Enter the phrase you would like to encrypt: " << endl;
+    getline(cin, phrase);
 
 
   keys.resize(phrase.size());
